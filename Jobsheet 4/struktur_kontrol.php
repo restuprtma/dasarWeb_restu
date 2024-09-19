@@ -21,5 +21,35 @@ while ($jarakSaatIni < $jarakTarget) {
     $hari++;
 }
 
-echo "<br> Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
+echo "<br><br> Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
+
+$jumlahLahan = 10;
+$tanamanPerLahan = 5;
+$buahPerTanaman = 10;
+$jumlahBuah = 0;
+
+for ($i = 1; $i <= $jumlahLahan; $i++) {
+    $jumlahBuah += ($tanamanPerLahan * $buahPerTanaman);
+}
+
+echo "<br><br>Jumlah buah yang akan dipanen adalah: $jumlahBuah";
+
+$skorUjian = [85, 92, 78, 96, 88];
+$totalSkor = 0;
+
+foreach ($skorUjian as $skor) {
+    $totalSkor += $skor;
+}
+
+echo "<br><br>Total skor ujian adalah: $totalSkor <br><br>";
+
+$nilaiSiswa = [85, 92, 58, 64, 90, 55, 88, 79, 70, 96];
+
+foreach ($nilaiSiswa as $nilai) {
+    if ($nilai < 60) {
+        echo "Nilai: $nilai (Tidak lulus) <br>";
+        continue;
+    }
+    echo "Nilai: $nilai (Lulus) <br>";
+}
 ?>
