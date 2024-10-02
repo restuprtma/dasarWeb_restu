@@ -1,0 +1,37 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ccc; 
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+th {
+    background-color: #4a4a4a; 
+    color: white; 
+}
+
+#dataTable, #rataRataUmur, #flip {
+    padding: 20px;
+    text-align: center;
+    background-color: #e6e6e6; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+tr:hover {
+    background-color: #e0e0e0; 
+}
