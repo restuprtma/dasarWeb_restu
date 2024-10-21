@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0000ff;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header */
+header {
+  background-color: #0000ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px; /* Adjust width to suit your design */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+section {
+  padding: 20px;
+}
+
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Business Info */
+#business-info {
+  background-color: #fff; /* Light gray background */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+#business-info h2 {
+  font-size: 2.2em;
+  color: #0000ff; /* Business color blue */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#business-info p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Price List Section */
+#price-list {
+  background-color: #0000ff; /* Keep white background */
+  background-image: url('img/Lets Clean Sober.PNG'); /* Path to your super graphic */
+  background-repeat: repeat; /* Repeats the graphic */
+  background-size: 50%; /* Size of each graphic tile, adjust as needed */
+  background-position: right; /* Adjust the size to fit your pattern */
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#price-list h2 {
+  background-color: rgba(0, 0, 255, 0.8);
+  font-size: 2em;
+  color: #fff; /* Business color blue */
+  margin-bottom: 30px;
+}
+
+.price-item {
+  display: inline-block;
+  width: calc(33% - 40px); /* Three items per row */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.price-item p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.price-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Testimonials */
+#testimonials {
+  background-color: #f0f8ff; /* Light blue tint */
+  padding: 40px 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+#testimonials h2 {
+  font-size: 2em;
+  color: #0000ff;
+  margin-bottom: 30px;
+}
+
+.testimonial-wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testimonial-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#testimonial-images img {
+  width: calc(14.28% - 10px); /* 7 images per slide */
+  height: auto;
+  aspect-ratio: 9 / 16;
+  margin-right: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#testimonial-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #0000ff;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.testimonial-navigation.prev {
+  left: 10px;
+}
+
+.testimonial-navigation.next {
+  right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #0000ff; /* Business blue */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer .footer-content h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: #ffdf00; /* Hover effect with contrasting color */
+}
+
+footer .social-links {
+  margin: 20px 0;
+}
+
+footer .social-links a {
+  font-size: 1em;
+  margin: 0 15px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+footer p {
+  font-size: 1em;
+  margin-top: 20px;
+  color: #ccc;
+}
