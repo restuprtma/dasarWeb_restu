@@ -53,6 +53,15 @@ section {
   line-height: 1.6;
 }
 
+#business-info ul {
+  list-style-type: none; 
+  padding-left: 0;       
+}
+
+#business-info ul li {
+  text-align: center;    
+}
+
 #business-info a {
   color: #0000ff;
   text-decoration: none;
