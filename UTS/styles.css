@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -5,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* Header */
 header {
@@ -16,31 +16,21 @@ header {
 }
 
 .logo {
-  width: 200px; /* Adjust width to suit your design */
+  width: 200px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-
 
 section {
   padding: 20px;
 }
 
 
-a {
-  color: #0000ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 /* Business Info */
 #business-info {
-  background-color: #fff; /* Light gray background */
+  background-color: #fff;
   padding: 40px 20px;
   text-align: center;
   border-radius: 8px;
@@ -50,7 +40,7 @@ a:hover {
 
 #business-info h2 {
   font-size: 2.2em;
-  color: #0000ff; /* Business color blue */
+  color: #0000ff;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -63,13 +53,22 @@ a:hover {
   line-height: 1.6;
 }
 
+#business-info a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+#business-info a:hover {
+  text-decoration: underline;
+}
+
 /* Price List Section */
 #price-list {
-  background-color: #0000ff; /* Keep white background */
-  background-image: url('img/Lets Clean Sober.PNG'); /* Path to your super graphic */
-  background-repeat: repeat; /* Repeats the graphic */
-  background-size: 50%; /* Size of each graphic tile, adjust as needed */
-  background-position: right; /* Adjust the size to fit your pattern */
+  background-color: #0000ff;
+  background-image: url('img/Lets Clean Sober.PNG');
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: right;
   padding: 40px 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -78,17 +77,16 @@ a:hover {
   overflow: hidden;
 }
 
-
 #price-list h2 {
   background-color: rgba(0, 0, 255, 0.8);
   font-size: 2em;
-  color: #fff; /* Business color blue */
+  color: #fff;
   margin-bottom: 30px;
 }
 
 .price-item {
   display: inline-block;
-  width: calc(33% - 40px); /* Three items per row */
+  width: calc(33.33% - 40px); /* Three items per row */
   margin: 20px;
   padding: 20px;
   background-color: #f9f9f9;
@@ -113,16 +111,12 @@ a:hover {
   transform: translateY(-10px);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 }
-
-
-
 /* Testimonials */
 #testimonials {
-  background-color: #f0f8ff; /* Light blue tint */
+  background-color: #f0f8ff;
   padding: 40px 20px;
   border-radius: 8px;
   text-align: center;
-  position: relative;
 }
 
 #testimonials h2 {
@@ -181,7 +175,7 @@ a:hover {
 
 /* Footer */
 footer {
-  background-color: #0000ff; /* Business blue */
+  background-color: #0000ff;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -214,7 +208,7 @@ footer .footer-links a {
 }
 
 footer .footer-links a:hover {
-  color: #ffdf00; /* Hover effect with contrasting color */
+  color: #ffdf00;
 }
 
 footer .social-links {
@@ -229,11 +223,49 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  transform: scale(1.2); /* Enlarge icons on hover */
+  transform: scale(1.2);
 }
 
 footer p {
   font-size: 1em;
   margin-top: 20px;
   color: #ccc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .price-item {
+    width: calc(50% - 40px); /* Two items per row on tablets */
+    margin: 20px;
+  }
+
+  #testimonial-images img {
+    width: calc(20% - 10px); /* 5 images per slide on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .price-item {
+    width: calc(100% - 40px); /* One item per row on smartphones */
+    margin: 20px auto; /* Center the items */
+  }
+
+  #testimonial-images img {
+    width: calc(33.33% - 10px); /* 3 images per slide on mobile */
+  }
+  
+  footer .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #testimonials h2, #price-list h2, #business-info h2 {
+    font-size: 1.5em; /* Smaller headings on mobile */
+  }
+
+  footer .footer-content h3 {
+    font-size: 1.5em;
+  }
 }
